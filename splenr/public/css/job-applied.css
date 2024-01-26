@@ -1,0 +1,56 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family:var(--font-family);
+    word-wrap: break-word;
+}
+
+html, body {
+    width:100%;
+    overflow-x:hidden
+}
+
+:root {
+    --primary-color: #fdd100;
+    --footer-bg: #000;
+    --text-color-light: #fff;
+    --text-color-dark: #000;
+    --waiting-badge: rgb(255, 170, 0);
+    --shortlisted-badge: rgb(46, 46, 199);
+    --hired-badge: rgb(27, 235, 27);
+    --declined-badge: rgb(102, 115, 98);
+    --font-family: sans-serif;
+}
+
+.waiting {
+    background: var(--waiting-badge);
+    color:var(--text-color-light)
+}
+
+.shortlisted {
+    background: var(--shortlisted-badge);
+    color:var(--text-color-light)
+}
+
+.hired {
+    background: var(--hired-badge);
+    color:var(--text-color-light)
+}
+
+.declined {
+    background: var(--declined-badge);
+    color:var(--text-color-light)
+}
+
+.applied-card {
+    background: url(../image/applied-job-card-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

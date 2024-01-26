@@ -1,0 +1,43 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family:var(--font-family);
+    word-wrap: break-word;
+}
+
+html, body {
+    width:100%;
+    overflow-x:hidden
+}
+
+:root {
+    --primary-color: #fdd100;
+    --footer-bg: #000;
+    --text-color-light: #fff;
+    --text-color-dark: #000;
+    --semi-transparent-bg: rgba(238, 168, 189, 0.0);
+    --font-family: sans-serif;
+}
+
+.unauthorized-page {
+    background: url('../image/401-bg.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center
+}
+
+.unauthorized-content {
+    background: var(--semi-transparent-bg);
+    border-radius: 10px;
+}
+
+.unauthorized-content h1, .unauthorized-content h4, .unauthorized-content p 
+{
+    text-shadow: 1px 5px 6px rgba(0, 0, 0, 0.43);
+}
